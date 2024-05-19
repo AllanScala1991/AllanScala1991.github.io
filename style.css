@@ -1,0 +1,129 @@
+body {
+    background-color: #0a0612;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#menu {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-items li{
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2vh;
+    border-left: 2px solid rgba(255, 255, 255, 0.603);
+    border-right: 2px solid rgba(255, 255, 255, 0.603);
+    padding: 5px;
+    color: rgba(255, 255, 255, 0.603);
+}
+
+#menu-items li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 2.1vh;
+    color: white;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+
+#content {
+    width: 100%;
+    height: 94vh;
+    border-top: 0.5px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+#about_me {
+    visibility: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+#training {
+    visibility: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+#portifolio {
+    visibility: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+#contact {
+    visibility: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+h2 {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 5vh;
+}
+
+p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content li{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    color: green;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+}
+
+form label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+    color: white;
+    margin-bottom: 1vh;
+}
+
+form input {
+    width: 100%;
+    height: 3vh;
+    border-radius: 0.5vh;
+    margin-bottom: 1vh;
+}
+
+#message-area {
+    width: 100%;
+    height: 20vh;
+    resize: none;
+    margin-bottom: 1vh;
+}
+
+form button {
+    width: 20%;
+    height: 4vh;
+    border-radius: 0.5vh;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-size: 2vh;
+}
+
+form button:hover {
+    cursor: pointer;
+    background-color: rgb(2, 2, 104);
+}

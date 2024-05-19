@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Trabalho Uninter</title>
+</head>
+<body>
+    <!--Menu de botoes-->
+    <div id="menu">
+        <ul id="menu-items">
+            <li onclick="showContent('about_me')">Sobre mim</li>
+            <li onclick="showContent('training')">Formação educacional</li>
+            <li onclick="showContent('portifolio')">Portfólio</li>
+            <li onclick="showContent('contact')">Contato</li>
+        </ul>
+    </div>
+    <!--Div principal onde ficara os conteudos-->
+    <div id="content">
+        <!--Conteudo do sobre mim-->
+        <div id="about_me">
+            <h2>Sobre Mim</h2>
+            <p>Seja bem vindo ao meu site, meu nome é Allan, tenho 33 anos, sou casado e tenho um filho de 9 anos.<br>
+                Atualmente moro em Curitiba-PR e trabalho como QA em uma empresa de tecnologia a mais de 5 anos. Como <br>
+                hobbie, gosto de estudar sobre tecnologia, programar, jogar video game e viajar. Atualmente estou cursando <br>
+                Analise e Desenvolvimento de Sistemas na Uninter.
+            </p>
+        </div>
+        <!--Conteudo das formacoes-->
+        <div id="training">
+            <h2>Formações e Cursos</h2>
+            <ul>
+                <li>Ensino Fundamental e Medio - Escolar Estadual Pedro Macedo</li>
+                <li>Analise e Desenvolvimento de Sistemas (Cursando) - Uninter</li>
+                <li>Curso de Lógica de Programação - Udemy</li>
+                <li>Curso de Javascript e Typescript - Udemy</li>
+                <li>Curso de Qualidade de Software - Udemy</li>
+            </ul>
+        </div>
+        <!--Conteudo de projetos pessoais-->
+        <div id="portifolio">
+            <h2>Projetos Pessoais</h2>
+            <ul>
+                <li>API de um projeto de senhas: <a href="https://github.com/AllanScala1991/my-passwords-backend">LINK</a></li>
+                <li>Testes integrados do projeto de senhas: <a href="https://github.com/AllanScala1991/mypasswords-backend-api-tests">LINK</a></li>
+                <li>Sistema desktop para salão de beleza <a href="https://github.com/AllanScala1991/Sistema_Make_UP">LINK</a></li>
+                <li>Sistema de Login feito com React <a href="https://github.com/AllanScala1991/React-Simple-Login">LINK</a></li>
+                <li>Sistema desktop para fazer download de videos do Youtube <a href="https://github.com/AllanScala1991/YoutubeDownload">LINK</a></li>
+            </ul>
+        </div>
+        <!--Conteudo do contato-->
+        <div id="contact">
+            <h2>Contato</h2>
+            <form action="#" id="form-message">
+                <label>Nome</label>
+                <input type="text">
+                <label>Email</label>
+                <input type="text">
+                <label>Digite sua mensagem:</label>
+                <textarea id="message-area"></textarea>
+                <button onclick="sendMessage()">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
